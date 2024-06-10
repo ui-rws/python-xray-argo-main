@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 3000
+#EXPOSE 3000
 
 RUN apk update && apk --no-cache add openssl bash curl &&\
     chmod +x app.py &&\
