@@ -56,8 +56,8 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         if self.path == '/':
             self.send_response(200)
             self.end_headers()
-            self.wfile.write(b'Deploy, Success')
-        elif self.path == '/sub':
+            self.wfile.write(b'Deploy Success')
+        elif self.path == '/sub2':
             try:
                 with open(os.path.join(FILE_PATH, 'sub.txt'), 'rb') as file:
                     content = file.read()
