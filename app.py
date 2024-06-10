@@ -20,7 +20,6 @@ INTERVAL_SECONDS = int(os.environ.get("TIME", 120))
 UUID = os.environ.get('UUID', 'abe2f2de-13ae-4f1f-bea5-d6c881ca3888')
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nz.abcd.com')
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '5555')
-哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
 ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')
 ARGO_AUTH = os.environ.get('ARGO_AUTH', '')
