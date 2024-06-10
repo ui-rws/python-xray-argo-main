@@ -26,7 +26,7 @@ ARGO_AUTH = os.environ.get('ARGO_AUTH', '')
 CFIP = os.environ.get('CFIP', 'skk.moe')
 NAME = os.environ.get('NAME', 'Vls')
 PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 8000)
-ARGO_PORT = int(os.environ.get('ARGO_PORT', 8000))
+ARGO_PORT = int(os.environ.get('ARGO_PORT', 8080))
 CFPORT = int(os.environ.get('CFPORT', 443))
 
 # Create directory if it doesn't exist
@@ -56,7 +56,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         if self.path == '/':
             self.send_response(200)
             self.end_headers()
-            self.wfile.write(b'Congratulations Deploy Success')
+            self.wfile.write(b'Success')
         elif self.path == '/sub':
             try:
                 with open(os.path.join(FILE_PATH, 'sub.txt'), 'rb') as file:
