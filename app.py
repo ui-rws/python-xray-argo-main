@@ -56,7 +56,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         if self.path == '/':
             self.send_response(200)
             self.end_headers()
-            self.wfile.write(b'Really love the day off during happy hour!! 👍')
+            self.wfile.write(b'Really love the day off during happy hour!!')
         elif self.path == '/sub':
             try:
                 with open(os.path.join(FILE_PATH, 'sub.txt'), 'rb') as file:
