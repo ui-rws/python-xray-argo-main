@@ -25,8 +25,8 @@ ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')
 ARGO_AUTH = os.environ.get('ARGO_AUTH', '')
 CFIP = os.environ.get('CFIP', 'skk.moe')
 NAME = os.environ.get('NAME', 'Vls')
-PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 8000)
-ARGO_PORT = int(os.environ.get('ARGO_PORT', 8001))
+PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 5050)
+ARGO_PORT = int(os.environ.get('ARGO_PORT', 8000))
 CFPORT = int(os.environ.get('CFPORT', 443))
 
 # Create directory if it doesn't exist
